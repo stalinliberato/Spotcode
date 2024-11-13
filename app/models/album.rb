@@ -5,8 +5,8 @@ class Album < ApplicationRecord
  #muitas musicas
   has_many :songs
 
-  validates :title, presense: true
-  validates :date, presense: true
+  validates :title, presence: true
+  validates :date, presence: true
 
   has_one_attached :cover
 end
